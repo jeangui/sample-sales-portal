@@ -1,4 +1,3 @@
-
 <head>
 <title>Sales by Region</title>
 </head>
@@ -28,18 +27,3 @@
   </div>
   
 </body>
-
-<template name="salesdata">
-  <div class="salesdata">
-    {{#each dataset}}
-      {{> datapoint}}
-    {{/each}}
-  </div>
-</template>
-
-<template name="datapoint">
-  <div class="datapoint {{selected}}">
-    <span class="region">{{region}}</span>
-    <span class="sales editable">{{total}}</span>
-  </div>
-</template>
